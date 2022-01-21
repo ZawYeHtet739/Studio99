@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="base" template="/WEB-INF/templates/default.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/tiles/includes/header.jsp"/>
+        <put-attribute name="nav" value="/WEB-INF/tiles/includes/nav.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="sletter" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/tiles/includes/footer.jsp"/>
+    </definition>
+
+    <definition name="home" extends="base">
+        <put-attribute name="title" value="Studio 99"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/home.jsp"/>
+        <put-attribute name="sletter" value="/WEB-INF/tiles/includes/sletter.jsp"/>
+    </definition>
+
+
+</tiles-definitions>
