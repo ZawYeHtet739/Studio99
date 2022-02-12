@@ -1,6 +1,7 @@
 package com.models;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "categories")
@@ -13,6 +14,18 @@ import javax.persistence.*;
     private String name;
 
     private String image;
+
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "cat_id")
+    private List<Product> products;
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 
     public int getId() {
         return id;

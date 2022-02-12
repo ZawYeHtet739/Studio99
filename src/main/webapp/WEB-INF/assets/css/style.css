@@ -56,7 +56,7 @@ Table OF Contents
 \*----------------------------*/
 
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #333;
 }
@@ -187,6 +187,22 @@ textarea.input {
   background: #FFF;
   border: 1px solid #E4E7ED;
   height: 40px;
+}
+
+.input-select-02{
+  padding: 0px 15px;
+  background: #FFF;
+  border: 1px solid #E4E7ED;
+  height: 40px;
+  width: 200px;
+}
+
+.input-select-03 {
+  padding: 0px 15px;
+  background: #FFF;
+  border: 1px solid #E4E7ED;
+  height: 40px;
+  width: 110px;
 }
 
 /*-- checkbox & radio input --*/
@@ -1581,7 +1597,7 @@ textarea.input {
 }
 
 .product-details .add-to-cart .qty-label .input-number {
-  width: 90px;
+  width: 70px;
   display: inline-block;
 }
 

@@ -18,4 +18,9 @@ public class CategoryService {
         return categories;
     }
 
+    public Category getCategoryById(int product_id){
+        Category category = categoryDao.getCategoryById(product_id);
+        return category;
+    }
+
 }

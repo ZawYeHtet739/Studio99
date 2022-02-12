@@ -30,4 +30,11 @@ public class CategoryImpl implements CategoryDao {
         return categories;
     }
 
+    @Override
+    public Category getCategoryById(int id) {
+        Category category = session().get(Category.class, id);
+        session().flush();
+        return category;
+    }
+
 }

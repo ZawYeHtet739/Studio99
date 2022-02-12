@@ -46,8 +46,8 @@
                         <!-- Cart -->
                         <div class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>Your Cart</span>
+                                <i class="fa fa-shopping-bag"></i>
+                                <span>Your Bag</span>
                                 <div class="qty">3</div>
                             </a>
                             <div class="cart-dropdown">
@@ -79,7 +79,7 @@
                                     <h5>SUBTOTAL: $2940.00</h5>
                                 </div>
                                 <div class="cart-btns">
-                                    <a href="#">View Cart</a>
+                                    <a href="#">View Bag</a>
                                     <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>

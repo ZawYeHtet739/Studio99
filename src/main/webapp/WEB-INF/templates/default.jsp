@@ -10,11 +10,12 @@
 
     <title><tiles:insertAttribute name="title"></tiles:insertAttribute></title>
 
-    <%-- Icon --%>
+    <!-- Icon -->
     <link rel="icon" href="/assets/img/studio99icon.png"/>
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
 
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
@@ -22,6 +23,7 @@
     <!-- Slick -->
     <link type="text/css" rel="stylesheet" href="/assets/css/slick.css"/>
     <link type="text/css" rel="stylesheet" href="/assets/css/slick-theme.css"/>
+
 
     <!-- nouislider -->
     <link type="text/css" rel="stylesheet" href="/assets/css/nouislider.min.css"/>
@@ -46,6 +48,7 @@
 <tiles:insertAttribute name="header"></tiles:insertAttribute>
 <tiles:insertAttribute name="nav"></tiles:insertAttribute>
 <tiles:insertAttribute name="content"></tiles:insertAttribute>
+<tiles:insertAttribute name="newproducts"></tiles:insertAttribute>
 <tiles:insertAttribute name="sletter"></tiles:insertAttribute>
 <tiles:insertAttribute name="footer"></tiles:insertAttribute>
 

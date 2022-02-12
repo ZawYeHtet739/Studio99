@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- NAVIGATION -->
 <nav id="navigation">
     <!-- container -->
@@ -8,11 +9,9 @@
             <ul class="main-nav nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="#">Hot Deals</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">T-Shirts</a></li>
-                <li><a href="#">Hoodies</a></li>
-                <li><a href="#">Jackets</a></li>
-                <li><a href="#">Bags</a></li>
+                <c:forEach var="cat" items="${categories}">
+                    <li><a href="/products/${cat.id}">${cat.name}</a></li>
+                </c:forEach>
             </ul>
             <!-- /NAV -->
         </div>

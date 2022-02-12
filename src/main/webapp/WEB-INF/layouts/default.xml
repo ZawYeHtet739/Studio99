@@ -10,6 +10,7 @@
         <put-attribute name="header" value="/WEB-INF/tiles/includes/header.jsp"/>
         <put-attribute name="nav" value="/WEB-INF/tiles/includes/nav.jsp"/>
         <put-attribute name="content" value=""/>
+        <put-attribute name="newproducts" value=""/>
         <put-attribute name="sletter" value=""/>
         <put-attribute name="footer" value="/WEB-INF/tiles/includes/footer.jsp"/>
     </definition>
@@ -17,8 +18,22 @@
     <definition name="home" extends="base">
         <put-attribute name="title" value="Studio 99"/>
         <put-attribute name="content" value="/WEB-INF/tiles/public/home.jsp"/>
+        <put-attribute name="newproducts" value="/WEB-INF/tiles/public/newproducts.jsp"/>
         <put-attribute name="sletter" value="/WEB-INF/tiles/includes/sletter.jsp"/>
     </definition>
+
+    <definition name="products" extends="base">
+        <put-attribute name="title" value="Studio 99 : Products"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/products.jsp"/>
+        <put-attribute name="sletter" value="/WEB-INF/tiles/includes/sletter.jsp"/>
+    </definition>
+
+    <definition name="singleproduct" extends="base">
+        <put-attribute name="title" value="Studio 99 : Product"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/singleproduct.jsp"/>
+        <put-attribute name="sletter" value="/WEB-INF/tiles/includes/sletter.jsp"/>
+    </definition>
+
 
 
 </tiles-definitions>

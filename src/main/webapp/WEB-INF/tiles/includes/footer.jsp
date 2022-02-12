@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- FOOTER -->
 <footer id="footer">
     <!-- top footer -->
@@ -11,8 +12,8 @@
                         <h3 class="footer-title">About Us</h3>
                         <p>Local clothing brand.</p>
                         <ul class="footer-links">
-                            <li><a href="#"><i class="fa fa-map-marker"></i>Myadanar Housing,Building 5,Room 103,14 Ward,Hlaing Tsp</a></li>
-                            <li><a href="#"><i class="fa fa-phone"></i>09402636149 , 09448533724 , 09794656779</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i>Myadanar Housing,<br>&emsp;&emsp;Building 5,Room 103,<br>&emsp;&emsp;14 Ward,Hlaing Tsp</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>09402636149 , 09448533724 ,<br>&emsp;&emsp;09794656779</a></li>
                             <li><a href="#"><i class="fa fa-envelope-o"></i>studio99.mm1999@gmail.com</a></li>
                         </ul>
                     </div>
@@ -22,11 +23,9 @@
                     <div class="footer">
                         <h3 class="footer-title">Categories</h3>
                         <ul class="footer-links">
-                            <li><a href="#">Hot Deals</a></li>
-                            <li><a href="#">Categories</a></li>
-                            <li><a href="#">T-Shirts</a></li>
-                            <li><a href="#">Hoodies</a></li>
-                            <li><a href="#">Jackets</a></li>
+                            <c:forEach var="cat" items="${categories}">
+                                <li><a href="/products/${cat.id}">${cat.name}</a></li>
+                            </c:forEach>
                         </ul>
                     </div>
                 </div>
